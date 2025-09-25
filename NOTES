@@ -1,0 +1,15 @@
+API => Application Programming Interface
+It acts as a two-way communication bridge b/w frontend and backend
+
+REST API => Representational State Transfer
+It organizes how web Applications talk to each other,
+seperating what the user sees(frontend) from
+what runs behind the scenes(backend).
+
+Core Principles of REST
+Stateless:
+The server doesn't store any information about
+the client b/w requests.
+Client-Server Architecture:
+The app(client) asks for things(data) and th server does
+what's requested(sends data or make changes).
