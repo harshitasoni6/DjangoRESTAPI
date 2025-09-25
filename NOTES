@@ -13,3 +13,9 @@ the client b/w requests.
 Client-Server Architecture:
 The app(client) asks for things(data) and th server does
 what's requested(sends data or make changes).
+Standardized Interface:
+GET(retrieving),PUT(updating),
+POST(creating),DELETE(deleting)
+also called CRUD.
+Easy to read data:
+JSON or XML
