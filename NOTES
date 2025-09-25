@@ -19,3 +19,8 @@ POST(creating),DELETE(deleting)
 also called CRUD.
 Easy to read data:
 JSON or XML
+Two ways:
+1.Web Application Endpoints:user can directly access it
+from the web browsers (http://127.0.0.1:8000/students/)
+2.API endpoints:returns the data to integrate into the
+frontend(http://127.0.0.1:8000/api/v1/students/)
