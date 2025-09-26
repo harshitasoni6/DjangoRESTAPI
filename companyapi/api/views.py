@@ -6,7 +6,7 @@ from api.models import Company
 from api.models import Employee
 from api.serializers import CompanySerializer
 from api.serializers import EmployeeSerializer
-
+from .pagination import CustomPagination
 # Create your views here.
 from django.http import HttpResponse
 
@@ -33,3 +33,4 @@ class CompanyViewSet(viewsets.ModelViewSet):
 class EmployeeViewSet(viewsets.ModelViewSet):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
+    pagination_class = CustomPagination
