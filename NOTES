@@ -6,21 +6,54 @@ It organizes how web Applications talk to each other,
 seperating what the user sees(frontend) from
 what runs behind the scenes(backend).
 
-Core Principles of REST
+---
+
+## Core Principles of REST
+
 Stateless:
 The server doesn't store any information about
 the client b/w requests.
+
 Client-Server Architecture:
 The app(client) asks for things(data) and th server does
 what's requested(sends data or make changes).
+
 Standardized Interface:
 GET(retrieving),PUT(updating),
 POST(creating),DELETE(deleting)
 also called CRUD.
 Easy to read data:
 JSON or XML
+
+---
+
 Two ways:
 1.Web Application Endpoints:user can directly access it
 from the web browsers (http://127.0.0.1:8000/students/)
 2.API endpoints:returns the data to integrate into the
 frontend(http://127.0.0.1:8000/api/v1/students/)
+
+---
+
+Mixins:
+Mixins are reuseable code classes in object-oriented
+programming that provide specific functionalities.
+
+generics:
+ListAPIView
+CreateAPIView
+RetrieveAPIView
+UpdateAPIView
+DestroyAPIView
+ListCreateAPIView
+RetrieveUpdateAPIView
+RetrieveUpdateDestroyAPIView
+
+Viewsets:
+1.viewsets.ViewSet => list(),
+create(),retrieve(),update(),
+delete()
+2.viewsets.ModelViewSet =>Takes only queryset and
+serializer_class and automatically
+provides both pk based and non-pk
+based operations.
